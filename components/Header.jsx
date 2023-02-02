@@ -1,12 +1,10 @@
 import styles from "../styles/Header.module.css"
 import { useRouter } from 'next/router'
-import { useGlobalState } from "./GlobalState"
 import BurgerMenu from "./BurgerMenu"
 
 const Header = () => {
 
     // sing global state
-    const [connectedAccount] = useGlobalState('connectedAccount')
 
     const router = useRouter()
 
