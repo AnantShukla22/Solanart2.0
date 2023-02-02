@@ -1,9 +1,8 @@
 import styles from "../styles/Header.module.css"
 import { useRouter } from 'next/router'
-import { connectWallet } from "../pages/BlockChain.services"
+import { connectWallet } from "../pages/Blockchain"
 import { useGlobalState, truncate } from "../pages/GlobalState"
 import BurgerMenu from "./BurgerMenu"
-import { AiOutlineMenu } from "react-icons/ai"
 
 const Header = () => {
 
