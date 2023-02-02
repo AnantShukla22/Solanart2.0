@@ -1,0 +1,55 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  padding: 15px 10px 10px 10px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  gap: 25px;
+  box-shadow:1px 8px 20px rgb(193, 0, 0);
+  color: rgb(215, 215, 215);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 19px;
+}
+
+.loaderContainer {
+  height: 30px;
+}
+
+.loader:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3.5px solid transparent;
+  border-top-color: rgb(221, 0, 0);
+  border-bottom-color: rgb(242, 255, 0);
+  animation: spinner 0.8s ease infinite;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

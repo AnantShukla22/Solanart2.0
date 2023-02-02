@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 100px 0 50px 0;
+}
+
+.heading {
+  font-size: 47px;
+  color: aliceblue;
+  background: linear-gradient(rgb(255, 255, 255), rgb(212, 212, 212));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 80px;
+}
+.sellerInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  gap:50px 20px;
+}
+
+.sellerInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.sellerImg {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.sellerContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+  .sellerInfoContainer {
+    gap: 30px 50px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .sellerInfoContainer {
+    gap: 30px 80px;
+  }
+}
+@media screen and (max-width:740px) {
+  .heading{
+    align-self: center;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .sellerInfoContainer {
+   display: flex;
+   justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sellerInfoContainer {
+    gap: 30px 25px;
+  }
+}

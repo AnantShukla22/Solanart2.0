@@ -1,0 +1,181 @@
+.container {
+  background-color: #000000;
+  background-image: radial-gradient(at 0% 0%, rgb(59, 0, 59), transparent 40%),
+    radial-gradient(at 50% 100%, rgb(84, 0, 42), transparent 50%),
+    radial-gradient(at 100% 0%, rgb(96, 0, 34), transparent 30%);
+    padding-bottom: 100px;
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.heading {
+  font-size: 35px;
+  color: aliceblue;
+}
+
+.cardContainer {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  box-shadow: 0 0 6px 2px rgb(156, 1, 1);
+  padding: 10px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+.cardOwnerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(246, 255, 0);
+}
+
+.NftCreater {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardHeading {
+  color: rgb(226, 0, 222);
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.cardDesc {
+  color: rgb(219, 219, 219);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+}
+
+.cardPriceContainer {
+  margin: 15px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardPrice > small {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(241, 0, 0);
+}
+.cardPrice > p {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(246, 255, 0);
+  padding: 3px 0;
+}
+
+.cardBtn {
+  padding: 6px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(163, 0, 0);
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cardBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 12px rgb(152, 0, 0);
+}
+
+.loadMoreBtnContainer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadMoreBtn {
+  padding: 10px 12px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(156, 1, 1);
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 13px;
+  color: rgb(237, 237, 237);
+  font-weight: 600;
+}
+
+.loadMoreBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 12px rgb(152, 0, 0);
+}
+
+/* responsive cards */
+
+@media screen and (max-width: 1250px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .cardDesc {
+    -webkit-line-clamp: 5;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    padding-bottom: 50px;
+  }
+  .wrapper {
+    width: 70%;
+  }
+  .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .cardContainer {
+    gap: 20px; 
+  }
+  .card {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .card {
+    padding: 15px;
+  }
+}
