@@ -1,5 +1,6 @@
 import styles from "../styles/Market.module.css"
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { NFT_DATA } from "../components/data"
 import NftCardDisplay from "../components/NftCardDisplay"
 import { AiOutlineReload, AiOutlineArrowLeft } from 'react-icons/ai'
@@ -64,7 +65,7 @@ const Market = () => {
                     </div>
                 </div>
             </section>
-
+<Footer/>
         </>
 
     )

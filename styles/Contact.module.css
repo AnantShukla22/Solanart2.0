@@ -1,5 +1,5 @@
 .container {
-  min-height: 100%;
+  /* min-height: 100%; */
   background-color: #000000;
   background-image: radial-gradient(at 0% 100%, rgb(59, 0, 59), transparent 40%),
     radial-gradient(at 50% 0, rgb(84, 0, 42), transparent 50%),
@@ -9,7 +9,7 @@
 .wrapper {
   width: 70%;
   margin: auto;
-  padding: 130px 0 0 0;
+  padding: 140px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;

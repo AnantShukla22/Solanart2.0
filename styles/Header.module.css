@@ -15,7 +15,7 @@
 
 .wrapper {
   padding: 15px 0;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -102,7 +102,7 @@
   width: 140px;
   height: 100vh;
   list-style: none;
-  background-color: #383838e5;
+  background-color: #000000e5;
   animation: animate 0.3s linear;
   transform: translateX();
 }
@@ -118,9 +118,13 @@
   display: flex;
 }
 .burgerLI {
-  margin: 65px auto;
-  font-size: 18px;
+  margin: 56px auto;
+  padding: 8px  10px;
+  color: rgb(194, 2, 2);
+  font-size: 19px;
+  font-weight: 600;
   cursor: pointer;
+  border: 1px solid rgb(168, 184, 198);
 }
 
 .burgerLI:hover {
