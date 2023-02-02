@@ -4,7 +4,7 @@ import { RxCrossCircled} from 'react-icons/rx'
 import { IoIosCheckmarkCircleOutline} from 'react-icons/io'
 
 const Alert = ({loadingMsg,setAlert,mintInfo}) => {
-  // console.log(mintInfo)
+  
   return (
     <div className={styles.container} onClick={()=>setAlert(false)}>
       <div className={styles.wrapper}>

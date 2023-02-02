@@ -7,7 +7,6 @@ import img6 from "../images/f.png";
 import img7 from "../images/g.png";
 import img8 from "../images/h.jpg";
 import img9 from "../images/i.jpg";
-import img10 from "../images/i.jpg";
 
 import ava1 from "../images/avatar1.png";
 import ava2 from "../images/avatar2.png";

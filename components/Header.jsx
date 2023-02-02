@@ -1,7 +1,6 @@
 import styles from "../styles/Header.module.css"
 import { useRouter } from 'next/router'
-import { connectWallet } from "./Blockchain"
-import { useGlobalState, truncate } from "./GlobalState"
+import { useGlobalState } from "./GlobalState"
 import BurgerMenu from "./BurgerMenu"
 
 const Header = () => {
@@ -23,7 +22,7 @@ const Header = () => {
                         <li className={styles.li} onClick={() => router.push("Contact")}>Contact</li>
                     </ul>
 
-                    <button onClick={connectWallet} className={styles.button}> {connectedAccount === 'Connect Wallet' ? connectedAccount : truncate(connectedAccount, 4, 4, 13)} </button>
+                    <button className={styles.button}> Connect Wallet </button>
                     
                     <div className={styles.burger}>
                         <BurgerMenu />

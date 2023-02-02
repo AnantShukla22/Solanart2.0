@@ -5,16 +5,9 @@ import Banner from '../components/Banner'
 import MyCollection from '../components/MyCollection'
 import Transaction from '../components/Transaction'
 import Footer from '../components/Footer'
-import { setGlobalState } from '../components/GlobalState'
-import { useEffect } from 'react'
+
 
 export default function Home() {
-
-  useEffect(() => {
-    window.ethereum.on('accountsChanged', async (accounts) => {
-      setGlobalState("connectedAccount", accounts[0])
-    })
-  }, [])
 
   return (
     <>
