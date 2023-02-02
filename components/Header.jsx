@@ -4,8 +4,6 @@ import BurgerMenu from "./BurgerMenu"
 
 const Header = () => {
 
-    // sing global state
-
     const router = useRouter()
 
     return (
