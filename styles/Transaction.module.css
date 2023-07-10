@@ -130,13 +130,15 @@
 
 @media screen and (max-width: 500px) {
   .wrapper {
-    width: 80%;
+    width: 100%;
   }
   .heading {
     font-size: 32px;
     text-align: center;
   }
   .TransCardContainer {
+    width: 85%;
+    margin: auto;
     gap: 28px;
     grid-template-columns: repeat(1, 1fr);
   }
