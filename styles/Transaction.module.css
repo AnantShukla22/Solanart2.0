@@ -133,7 +133,7 @@ text-align: center;
 
 @media screen and (max-width: 500px) {
   .wrapper {
-    width: 90%;
+    width: 85%;
   }
   .heading{
     font-size: 32px;  
@@ -146,4 +146,8 @@ text-align: center;
   .container{
     padding-bottom: 40px;
   }
+  .transCardValue{
+    font-size: 16px;
+  }
+  
 }
