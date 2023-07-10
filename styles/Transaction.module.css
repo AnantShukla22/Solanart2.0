@@ -3,7 +3,7 @@
   background-image: radial-gradient(at 0% 100%, rgb(59, 0, 59), transparent 40%),
     radial-gradient(at 50% 0, rgb(84, 0, 42), transparent 50%),
     radial-gradient(at 100% 100%, rgb(96, 0, 34), transparent 30%);
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .wrapper {
@@ -46,7 +46,6 @@
 .transCardId > h4 {
   font-size: 16px;
   font-weight: 200;
-  
 }
 
 .transCardId > small {
@@ -59,17 +58,16 @@
 .transCardId > small > span {
   font-size: 14px;
   color: rgb(189, 189, 189);
-
 }
 .transCardId > small > a {
   font-size: 15px;
   margin: 0 4px;
   color: rgb(255, 51, 0);
   font-weight: 600;
-  text-decoration: underline ;
+  text-decoration: underline;
 }
 
-.transCardValue{
+.transCardValue {
   font-size: 17px;
   font-weight: 700;
   color: rgb(225, 255, 0);
@@ -117,36 +115,35 @@
   .wrapper {
     width: 70%;
   }
-  .heading{
-    font-size: 32px;  
-text-align: center;  
+  .heading {
+    font-size: 32px;
+    text-align: center;
   }
   .TransCardContainer {
     gap: 28px;
     grid-template-columns: repeat(1, 1fr);
   }
-  .container{
+  .container {
     padding-bottom: 40px;
   }
 }
 
-
 @media screen and (max-width: 500px) {
   .wrapper {
-    width: 80%;
+    width: 70%;
   }
-  .heading{
-    font-size: 32px;  
-text-align: center;  
+  .heading {
+    font-size: 32px;
+    text-align: center;
   }
   .TransCardContainer {
     gap: 28px;
     grid-template-columns: repeat(1, 1fr);
   }
-  .container{
+  .container {
     padding-bottom: 40px;
   }
-  .transCardValue{
+  .transCardValue {
     font-size: 16px;
   }
   .transCardIcon {
