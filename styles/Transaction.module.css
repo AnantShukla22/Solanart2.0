@@ -130,3 +130,20 @@ text-align: center;
   }
 }
 
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+  }
+  .heading{
+    font-size: 32px;  
+text-align: center;  
+  }
+  .TransCardContainer {
+    gap: 28px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container{
+    padding-bottom: 40px;
+  }
+}
